@@ -1,3 +1,11 @@
+/**
+ * This class is special in the way that each TreeNode is an instance of a BinaryTree.
+ * 1. Each instance of the BinaryTee only has two child nodes.
+ * 2. Each instance of the tree has two sides: Left and Right, where the Left child node
+ *      will always be smaller than the parent node, and the Right child node will always
+ *      be larger than the parent node.
+ */
+
 class CustomBinaryTree {
     constructor(value, depth = 1) {
         this.value = value;
