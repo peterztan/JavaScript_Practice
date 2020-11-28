@@ -1,7 +1,9 @@
 // const CustomSLL = require("./CustomSLL.js");
 // const CustomDLL = require("./CustomDLL.js");
-const MinHeap = require("./CustomMinHeap.js");
-const bubbleSort = require("./CustomBubbleSort.js");
+// const MinHeap = require("./CustomMinHeap.js");
+// const bubbleSort = require("./CustomBubbleSort.js");
+const TestingArray = require("./CustomTestingArray.js");
+const {customQuickSort, customPartition} = require("./CustomQuickSort.js");
 
 // const seasons = new CustomSLL;
 
@@ -52,12 +54,17 @@ const bubbleSort = require("./CustomBubbleSort.js");
 
 // subway.printList();
 
-const testHeap = new MinHeap;
-const valuesToAdd = [14, 15, 36, 28, 38, 30];
+// const testHeap = new MinHeap;
+// const valuesToAdd = [14, 15, 36, 28, 38, 30];
 
-valuesToAdd.forEach(value => {
-    testHeap.add(value);
-})
+// valuesToAdd.forEach(value => {
+//     testHeap.add(value);
+// })
 
-console.log(testHeap);
-console.log(bubbleSort(valuesToAdd));
+// console.log(testHeap);
+// console.log(bubbleSort(valuesToAdd));
+
+const randomGenArray = new TestingArray(100).initialize();
+console.log(randomGenArray);
+const sortedArray = customQuickSort(randomGenArray);
+console.log(sortedArray);

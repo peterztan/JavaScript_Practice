@@ -21,12 +21,4 @@ const CustomMerge = (leftArray, rightArray) => {
     return sortedArray.concat(leftArray).concat(rightArray);
 }
 
-const randomGenArray = [];
-while (randomGenArray.length < 100) {
-    const randomNumber = Math.floor(Math.random()*100);
-    randomGenArray.push(randomNumber);
-};
-console.log(randomGenArray);
-console.log(CustomMergeSort(randomGenArray));
-
 module.exports = CustomMergeSort;
