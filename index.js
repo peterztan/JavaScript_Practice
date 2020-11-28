@@ -1,6 +1,7 @@
 // const CustomSLL = require("./CustomSLL.js");
 // const CustomDLL = require("./CustomDLL.js");
 const MinHeap = require("./CustomMinHeap.js");
+const bubbleSort = require("./CustomBubbleSort.js");
 
 // const seasons = new CustomSLL;
 
@@ -59,3 +60,4 @@ valuesToAdd.forEach(value => {
 })
 
 console.log(testHeap);
+console.log(bubbleSort(valuesToAdd));
