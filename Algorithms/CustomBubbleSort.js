@@ -1,6 +1,6 @@
 const swap = require("./CustomSwap");
 
-const customBubbleSort = input => {
+const bubbleSort = input => {
     let swapCount = 0;
     let swapping = true;
 
@@ -19,4 +19,4 @@ const customBubbleSort = input => {
     return input;
 }
 
-module.exports = customBubbleSort;
+module.exports = bubbleSort;

@@ -1,4 +1,4 @@
-class CustomTestingArray {
+class TestingArray {
     constructor (size) {
         this.size = size;
     }
@@ -13,4 +13,4 @@ class CustomTestingArray {
     }
 }
 
-module.exports = CustomTestingArray;
+module.exports = TestingArray;

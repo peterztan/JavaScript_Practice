@@ -1,20 +1,20 @@
-class CustomTreeNode {
+class TreeNode {
     constructor(data) {
         this.data = data;
         this.children = [];
     }
 
     addChild(child) {
-        if (child instanceof CustomTreeNode) {
+        if (child instanceof TreeNode) {
             return this.children.push(child);
         }
-        return this.children.push(new CustomTreeNode(child));
+        return this.children.push(new TreeNode(child));
     }
 
     removeChild(childToRemove) {
         const length = this.children.length;
         this.children = this.children.filter(child => {
-            return childToRemove instanceof CustomTreeNode
+            return childToRemove instanceof TreeNode
             ? child !== childToRemove
             : child.data !== childToRemove;
         });
@@ -48,4 +48,4 @@ class CustomTreeNode {
     }
 }
 
-module.exports = CustomTreeNode;
+module.exports = TreeNode;

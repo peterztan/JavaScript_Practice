@@ -6,7 +6,7 @@
  *      be larger than the parent node.
  */
 
-class CustomBinaryTree {
+class BinaryTree {
     constructor(value, depth = 1) {
         this.value = value;
         this.depth = depth;
@@ -19,12 +19,12 @@ class CustomBinaryTree {
             if (this.left) {
                 return this.left.insert(value);
             }
-            return this.left = new CustomBinaryTree(value, this.depth + 1);
+            return this.left = new BinaryTree(value, this.depth + 1);
         }
         if (this.right) {
             return this.right.insert(value);
         }
-        return this.right = new CustomBinaryTree(value, this.depth + 1);
+        return this.right = new BinaryTree(value, this.depth + 1);
     }
 
     getNodeByValue(value) {
@@ -59,4 +59,4 @@ class CustomBinaryTree {
     }
 };
 
-module.exports = CustomBinaryTree;
+module.exports = BinaryTree;

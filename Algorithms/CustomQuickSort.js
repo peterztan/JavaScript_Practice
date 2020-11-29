@@ -1,16 +1,16 @@
 const swap = require("./CustomSwap");
 
-const customQuickSort = (array, leftBound = 0, rightBound = array.length - 1) => {
+const quickSort = (array, leftBound = 0, rightBound = array.length - 1) => {
     if (leftBound < rightBound) {
-        const pivotIndex = customPartition(array, leftBound, rightBound);
-        customQuickSort(array, leftBound, pivotIndex - 1);
-        customQuickSort(array, pivotIndex, rightBound);
+        const pivotIndex = partition(array, leftBound, rightBound);
+        quickSort(array, leftBound, pivotIndex - 1);
+        quickSort(array, pivotIndex, rightBound);
     }
     return array;
 }
 
 //returns the index position for the pivot
-const customPartition = (array, leftIndex, rightIndex) => {
+const partition = (array, leftIndex, rightIndex) => {
     const pivot = array[Math.floor((rightIndex + leftIndex) / 2)];
 
     while (leftIndex <= rightIndex) {
@@ -32,10 +32,6 @@ const customPartition = (array, leftIndex, rightIndex) => {
 }
 
 module.exports = {
-    customPartition,
-    customQuickSort
+    partition,
+    quickSort
 };
-
-const quizArray = [11, 0, 22, 34, 33];
-
-console.log(customPartition(quizArray, 0, 2));

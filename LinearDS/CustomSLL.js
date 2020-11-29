@@ -1,12 +1,12 @@
-const CustomSLLNode = require ("./CustomSLLNode.js");
+const SLLNode = require ("./CustomSLLNode.js");
 
-class CustomSLL {
+class SLL {
     constructor() {
         this.head = null;
     }
 
     addToHead(data) {
-        const newHead = new CustomSLLNode(data);
+        const newHead = new SLLNode(data);
         const currentHead = this.head;
         this.head = newHead;
         if (currentHead) {
@@ -20,9 +20,9 @@ class CustomSLL {
             while (tail.getNextNode() !== null) {
                 tail = tail.getNextNode();
             }
-            return tail.setNextNode(new CustomSLLNode(data));
+            return tail.setNextNode(new SLLNode(data));
         }
-        return this.head = new CustomSLLNode(data);
+        return this.head = new SLLNode(data);
     }
 
     removeHead() {
@@ -67,4 +67,4 @@ class CustomSLL {
     }
 }
 
-module.exports = CustomSLL;
+module.exports = SLL;

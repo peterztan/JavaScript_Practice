@@ -1,4 +1,4 @@
-const CustomMergeSort = inputArray => {
+const mergeSort = inputArray => {
     const length = inputArray.length;
     if (length === 1) {
         return inputArray;
@@ -8,10 +8,10 @@ const CustomMergeSort = inputArray => {
     const leftArray = inputArray.slice(0, mid);
     const rightArray = inputArray.slice(mid, length);
 
-    return CustomMerge(CustomMergeSort(leftArray), CustomMergeSort(rightArray));
+    return merge(mergeSort(leftArray), mergeSort(rightArray));
 }
 
-const CustomMerge = (leftArray, rightArray) => {
+const merge = (leftArray, rightArray) => {
     const sortedArray = [];
     while (leftArray.length > 0 && rightArray.length > 0) {
         leftArray[0] < rightArray[0]
@@ -21,4 +21,4 @@ const CustomMerge = (leftArray, rightArray) => {
     return sortedArray.concat(leftArray).concat(rightArray);
 }
 
-module.exports = CustomMergeSort;
+module.exports = mergeSort;

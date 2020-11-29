@@ -1,11 +1,11 @@
-class CustomSLLNode {
+class SLLNode {
     constructor (data) {
         this.data = data;
         this.next = null;
     }
 
     setNextNode(node) {
-        if (node instanceof CustomSLLNode || node === null) {
+        if (node instanceof SLLNode || node === null) {
             return this.next = node;
         }
         throw new Error("This node is not an instance of the CustomSLLNode.");
@@ -16,4 +16,4 @@ class CustomSLLNode {
     }
 }
 
-module.exports = CustomSLLNode;
+module.exports = SLLNode;

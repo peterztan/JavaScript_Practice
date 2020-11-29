@@ -1,12 +1,12 @@
-const CustomSLL = require("./LinearDS/CustomSLL");
-const CustomSLLNode = require("./LinearDS/CustomSLLNode");
+const SLL = require("./LinearDS/CustomSLL");
+const SLLNode = require("./LinearDS/CustomSLLNode");
 
-class CustomHashMap {
+class HashMap {
     constructor(size = 0) {
         this.hashmap = new Array(size)
         //fills or initializes the new array with null values so they can be replaced later
         .fill(null)
-        .map(() => new CustomSLL);
+        .map(() => new SLL);
     }
 
     hash(key) {
@@ -24,7 +24,7 @@ class CustomHashMap {
         const linkedList = this.hashmap[arrayIndex];
         //add new node with key-value pair stored in it as the new head for the linkedList if it doesn't have a head
         if (!linkedList.head) {
-            linkedList.addToHead(new CustomSLLNode({key, value}));
+            linkedList.addToHead(new SLLNode({key, value}));
             return;
         }
         let current = linkedList.head;
@@ -56,4 +56,4 @@ class CustomHashMap {
     }
 }
 
-module.exports = CustomHashMap;
+module.exports = HashMap;

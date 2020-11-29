@@ -1,9 +1,9 @@
-const CustomSLL = require("./CustomSLL");
+const SLL = require("./CustomSLL");
 
 //Boounded Queues are Queues with a max queue size
-class CustomBoundedQueue {
+class boundedQueue {
     constructor(maxSize = Infinity) {
-        this.queue = new CustomSLL;
+        this.queue = new SLL;
         this.size = 0;
         this.maxSize = maxSize;
     }
@@ -43,7 +43,7 @@ class CustomBoundedQueue {
     }
 }
 
-module.exports = CustomBoundedQueue;
+module.exports = boundedQueue;
 
 // const newQueue = new CustomBoundedQueue;
 // newQueue.dequeue();

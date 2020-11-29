@@ -6,7 +6,7 @@
  *      i.e.: the same rules must be followed before and after the manipulation.
  */
 
-class CustomMinHeap {
+class MinHeap {
     constructor() {
         this.heap = [null];
         this.size = 0;
@@ -101,4 +101,4 @@ const getParent = current => Math.floor((current / 2));
 const getLeft = current => current * 2;
 const getRight = current => current * 2 + 1;
 
-module.exports = CustomMinHeap;
+module.exports = MinHeap;

@@ -1,8 +1,8 @@
-const CustomSLL = require("./CustomSLL");
+const SLL = require("./CustomSLL");
 
-class CustomQueue {
+class Queue {
     constructor() {
-        this.queue = new CustomSLL;
+        this.queue = new SLL;
         this.size = 0;
     }
 
@@ -25,9 +25,9 @@ class CustomQueue {
     }
 }
 
-module.exports = CustomQueue;
+module.exports = Queue;
 
-// const testQueue = new CustomQueue;
+// const testQueue = new Queue;
 // testQueue.enqueue("New Item");
 // testQueue.enqueue("Second Item");
 // testQueue.peek();

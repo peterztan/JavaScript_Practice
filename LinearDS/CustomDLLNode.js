@@ -1,4 +1,4 @@
-class CustomDLLNode {
+class DLLNode {
     constructor(data) {
         this.data = data;
         this.next = null;
@@ -6,14 +6,14 @@ class CustomDLLNode {
     }
 
     setNextNode(node) {
-        if (node instanceof CustomDLLNode || node === null) {
+        if (node instanceof DLLNode || node === null) {
             return this.next = node;
         }
         throw new Error("This node is not an instance of CustomDLLNode.");
     }
 
     setPreviousNode(node) {
-        if (node instanceof CustomDLLNode || node === null) {
+        if (node instanceof DLLNode || node === null) {
             return this.previous = node;
         }
         throw new Error("This node is not an instance of CustomDLLNode.");
@@ -28,8 +28,8 @@ class CustomDLLNode {
     }
 }
 
-/* const newNode = new CustomDLLNode;
-newNode.setNextNode(new CustomDLLNode("Next Node"));
+/* const newNode = new DLLNode;
+newNode.setNextNode(new DLLNode("Next Node"));
 console.log(newNode.getNextNode().data); */
 
-module.exports = CustomDLLNode;
+module.exports = DLLNode;

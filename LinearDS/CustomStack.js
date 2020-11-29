@@ -1,8 +1,8 @@
-const CustomSLL = require("./CustomSLL");
+const SLL = require("./CustomSLL");
 
-class CustomStack {
+class Stack {
     constructor(maxSize = Infinity) {
-        this.stack = new CustomSLL;
+        this.stack = new SLL;
         this.size = 0;
         this.maxSize = maxSize;
     }
@@ -46,4 +46,4 @@ class CustomStack {
     }
 }
 
-module.exports = CustomStack;
+module.exports = Stack;

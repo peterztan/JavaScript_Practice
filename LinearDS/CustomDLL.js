@@ -1,13 +1,13 @@
-const CustomDLLNode = require("./CustomDLLNode.js");
+const DLLNode = require("./CustomDLLNode.js");
 
-class CustomDLL {
+class DLL {
     constructor() {
         this.head = null;
         this.tail = null;
     }
 
     addToHead(data) {
-        const newHead = new CustomDLLNode(data);
+        const newHead = new DLLNode(data);
         const currentHead = this.head;
         if (currentHead) {
             currentHead.setPreviousNode(newHead);
@@ -20,7 +20,7 @@ class CustomDLL {
     }
 
     addToTail(data) {
-        const newTail = new CustomDLLNode(data);
+        const newTail = new DLLNode(data);
         const currentTail = this.tail;
         if (currentTail) {
             currentTail.setNextNode(newTail);
@@ -125,4 +125,4 @@ class CustomDLL {
     }
 }
 
-module.exports = CustomDLL;
+module.exports = DLL;
