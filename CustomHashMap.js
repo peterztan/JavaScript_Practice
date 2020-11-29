@@ -1,5 +1,5 @@
-const CustomSLL = require("./CustomSLL");
-const CustomSLLNode = require("./CustomSLLNode");
+const CustomSLL = require("./LinearDS/CustomSLL");
+const CustomSLLNode = require("./LinearDS/CustomSLLNode");
 
 class CustomHashMap {
     constructor(size = 0) {

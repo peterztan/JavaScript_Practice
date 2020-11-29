@@ -35,3 +35,7 @@ module.exports = {
     customPartition,
     customQuickSort
 };
+
+const quizArray = [11, 0, 22, 34, 33];
+
+console.log(customPartition(quizArray, 0, 2));

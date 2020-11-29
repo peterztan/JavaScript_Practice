@@ -2,8 +2,8 @@
 // const CustomDLL = require("./CustomDLL.js");
 // const MinHeap = require("./CustomMinHeap.js");
 // const bubbleSort = require("./CustomBubbleSort.js");
-const TestingArray = require("./CustomTestingArray.js");
-const {customQuickSort, customPartition} = require("./CustomQuickSort.js");
+//const TestingArray = require("./CustomTestingArray.js");
+const {customQuickSort, customPartition} = require("./Algorithms/CustomQuickSort.js");
 
 // const seasons = new CustomSLL;
 
@@ -64,7 +64,7 @@ const {customQuickSort, customPartition} = require("./CustomQuickSort.js");
 // console.log(testHeap);
 // console.log(bubbleSort(valuesToAdd));
 
-const randomGenArray = new TestingArray(100).initialize();
-console.log(randomGenArray);
-const sortedArray = customQuickSort(randomGenArray);
-console.log(sortedArray);
+//const randomGenArray = new TestingArray(100).initialize();
+//console.log(randomGenArray);
+//const sortedArray = customQuickSort(randomGenArray);
+//console.log(sortedArray);
