@@ -18,7 +18,7 @@
 - Heaps: Yet another special type of Tree data structure. It is often used to keep track of a minimum or a maximum value held within. The root node of this structure typically holds data that is either smaller than the data held in subsequent child nodes, or bigger than the data held in subsequent child nodes
 
 #### Graph Data Structures: Custom implementations of graph data structures in JavaScript
-- Graphs: TBD
+- Graphs: A data structure used to represent networks between things. It is typically composed of nodes called `Vertex`, and is connected to other `vertices` via an `Edge`. In a `weighted` graph, there is also an attribute called `Cost` associated with each `edge` such that the shortest path through a graph may not be the least expensive.
 
 #### Algorithms: Custom implementations of common algorithms in JavaScript
 - Iteration: Repetitive execution of a block of code or function until a condition has been met
