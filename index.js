@@ -4,6 +4,5 @@ const MinHeap = require("./NonLinearDS/CustomMinHeap.js");
 const bubbleSort = require("./Algorithms/CustomBubbleSort.js");
 const TestingArray = require("./CustomTestingArray.js");
 const {quickSort, partition} = require("./Algorithms/CustomQuickSort.js");
-const Graph = require("./GraphDS/CustomGraph.js");
 
 //Testing codes below

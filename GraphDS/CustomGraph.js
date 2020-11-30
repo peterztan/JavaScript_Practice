@@ -20,10 +20,11 @@ class Graph {
     addEdge(vertexOne, vertexTwo, weight) {
         const edgeWeight = this.isWeighted ? weight : null;
         if (vertexOne instanceof Vertex && vertexTwo instanceof Vertex) {
-            vertexOne.addEdge(vertexTwo, weight);
+            vertexOne.addEdge(vertexTwo, edgeWeight);
             if (!this.isDirected) {
-                vertexTwo.addEdge(vertexOne, weight);
+                vertexTwo.addEdge(vertexOne, edgeWeight);
             }
+            return;
         }
         throw new Error("One or more of the inputs is not an instance of Vertex.");
     }

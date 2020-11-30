@@ -23,12 +23,18 @@
 #### Algorithms:
 - Iteration: Repetitive execution of a block of code or function until a condition has been met
 - Recursion: Function calling within itself. Typically with a `base step` and a `recursive step`
+- Inorder Tree Traversal: In order of nodes traversed `Left -> Root -> Right`
+- Preorder Tree Traversal: In order of nodes traversed `Root -> Left -> Right`
+- Postorder Tree Traversal: In order of nodes traversed `Left -> Right -> Root`
 - Breadth-First-Search Tree Traversal: Algorithm for finding a value in a `Tree` structure by going through every neighboring TreeNodes
 - Depth-First-Search Tree Traversal: Algorithm for finding a value in a `Tree` structure by going down the tree until a `leaf` node is reached
 - Binary Search: A `Divide and Conquer` approach to find data in a sorted array in `O(log N)` time, where the size of the input is cut in half with each iteration
 - Bubble Sort: A sorting algorithm that sorts an array of data by swapping adjacent elements in `O(N^2)` time
 - Merge Sort: A sorting algorithm that sorts an array of data by first `splitting` them and then `merging` them into a sorted array in `O(N*log N)` time
 - Quick Sort: A `Divide and Conquer` approach to sort an array of data by using a `pivot` and breaking the array into sub-arrays with at most one element, then values in the rest of the array get compared to the `pivot` and put into one of three groups -> a group of values smaller than the `pivot`, the `pivot` itself, and a group of values larger than the `pivot`
-- Breadth-First-Search Graph Traversal: Useful for figuring out shortest paths through a graph but very inefficient. It checks every neighboring vertices in a graph before going down a level of depth.
-- Depth-First-Search Graph Traversal: Useful for determining whether a path exists between two vertices, and for solving problems with a singular correct answer such as Sudoku. Can be used for topological sorting and cycle detection
-- Djikstra's Algorithm: An algorithm used to find the shortest distance between vertices in a `weighted` graph. It does this by utilizing a `BFS` approach and keeping track of and updates distances between vertices
+- Breadth-First-Search Graph Traversal: Useful for figuring out shortest paths through a graph but very inefficient. It checks every neighboring vertices in a graph before going down a level of depth. The run time formula for this search algorithm is `O(vertices + edges)`
+- Depth-First-Search Graph Traversal: Useful for determining whether a path exists between two vertices, and for solving problems with a singular correct answer such as Sudoku. Can be used for topological sorting and cycle detection. The run time formula for this search algorithm is `O(vertices + edges)`
+- Djikstra's Algorithm: An algorithm used to find the shortest distance between vertices in a ***weighted*** graph. It does this by utilizing a ***BFS*** approach and keeping track of and updates distances between vertices
+- DFS Preorder Graph Traversal: each vertex is added to the `visited` list and added to the output list ***BEFORE*** getting `added` to the `stack`
+- DFS Postorder Graph Traversal: each vertex is added to the `visited` list and added to the output list ***AFTER*** it is `popped` off the `stack`
+- DFS Reverse Postorder Graph Traversal: Also called Topological Sort. Returns a list that is exactly the ***reverse*** of the postorder list
