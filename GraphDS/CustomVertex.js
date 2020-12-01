@@ -8,13 +8,14 @@ class Vertex {
 
     addEdge(vertex, weight) {
         if (vertex instanceof Vertex) {
-            return this.edges.push(new Edge(this, vertex, weight));
+            this.edges.push(new Edge(this, vertex, weight));
+            return;
         }
         throw new Error("This is not an instance of Vertex");
     }
 
     removeEdge(vertex) {
-        return this.edges = this.edges.filter(edge => edge.end !== vertex);
+        this.edges = this.edges.filter(edge => edge.end !== vertex);
     }
     
     print() {

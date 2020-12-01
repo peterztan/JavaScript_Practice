@@ -1,10 +1,10 @@
 const Vertex = require("./CustomVertex");
 
 class Graph {
-    constructor(isWeighted = false, isDirected = false) {
+    constructor(isDirected = false, isWeighted = false) {
         this.vertices = [];
-        this.isWeighted = isWeighted;
         this.isDirected = isDirected;
+        this.isWeighted = isWeighted;
     }
 
     addVertex(data) {
@@ -40,8 +40,13 @@ class Graph {
         throw new Error("One or more of the inputs is not an instance of Vertex.")
     }
 
+    getVertexByValue(value) {
+        return this.vertices.find(vertex => vertex.data === value);
+    }
+    
     print() {
-        this.vertices.forEach(vertex => vertex.print());
+        const vertexList = this.vertices;
+        vertexList.forEach(vertex => vertex.print());
     }
 }
 
