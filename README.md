@@ -38,3 +38,14 @@
 - DFS Preorder Graph Traversal: each vertex is added to the `visited` list and added to the output list ***BEFORE*** getting `added` to the `stack`
 - DFS Postorder Graph Traversal: each vertex is added to the `visited` list and added to the output list ***AFTER*** it is `popped` off the `stack`
 - DFS Reverse Postorder Graph Traversal: Also called Topological Sort. Returns a list that is exactly the ***reverse*** of the postorder list
+
+#### ***BONUS***:
+#### Whiteboarding:
+The steps are:
+
+1. Clarify the Problem
+2. Create Inputs
+3. Outline the Solution
+4. Code the Solution
+5. Test the Solution
+6. Analyze the Solution
