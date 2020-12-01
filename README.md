@@ -43,9 +43,20 @@
 #### Whiteboarding:
 The steps are:
 
-1. Clarify the Problem
-2. Create Inputs
-3. Outline the Solution
-4. Code the Solution
-5. Test the Solution
-6. Analyze the Solution
+1. ***Clarify the Problem***:
+As the interviewer present the technical problem, repeat the question back to the interviewer in your own words as you think about any apparent misunderstandings. Then, ask every clarifying questions that come to mind.
+
+2. ***Create Inputs***:
+If the question is clear enough now, you should be able to give some inputs and outputs. What would be the most common application scenario regarding the problem at hand and what would the respective output be? Try to focus on an input that reflect a common usage first and then try to discuss edge cases with your interviewer.
+
+3. ***Outline the Solution***:
+What are the steps that would be required to solve the problem? Try to talk and break down the problem with the interviewer and ask for inputs on specifics regarding what the interviewer would like you to do, and be sure to incorporate the interviewer's input. Show your thorught process through dialogue and what kind of a co-worker you would potentially be.
+
+4. ***Code the Solution***:
+Talk as you write each step, explain what you are doing with the code you are writting in each step, face the interviewer when you explain and face the whiteboard when you write, make sure to keep the dialogue open with the interviewer.
+
+5. ***Test the Solution***:
+Use the input cases you wrote down earlier to test your algorithmic implementation of the problem, walk through the execution of your code which helps showcase your communication skills and catch any missed logical errors. If you do find any errors, stay calm and talk about what you can do to fix it. The interviewer may ask you to write the correction or be satisfied with the explanation.
+
+6. ***Analyze the Solution***:
+Analyze the space and time complexity of your code if you have not already. Talk through your logic as in why you think it is efficient/inefficient and whether or not there is a way to improve your solution. Again, communication is key. The interviewer may ask you to write out the optimized solution or be satisfied with an explanation.
